@@ -13,7 +13,7 @@ function onSubmit(e){
 async function generateImageRequest(prompt,size){
     try{
         showSpinner();
-        const response=await fetch('/openai/generateimage',{
+        const response=await fetch('/openai/generateImage',{
             method:'POST',
             headers:{
                 'Content-Type':'application/json',
